@@ -7,9 +7,10 @@ const [products,setProducts] = useState([]);
 useEffect (()=>{
   const getData = async () => {
     const res = await fetch(
-      "https://api.escuelajs.co/api/v1/products?categoryId=2",
+      "https://api.escuelajs.co/api/v1/products?offset=0&limit=12",
     );
     const data = await res.json();
+    // console.log(data);
     setProducts(data);
   }
   getData();
@@ -53,7 +54,9 @@ useEffect (()=>{
               <div className="flex flex-col pt-[8px] gap-1 relative">
                 <div className="flex justify-between text-[14px] text-tx-400">
                   <p className="line-clamp-1">{product.title}</p>
-                  <p className="absolute left-35 font-bold">${product.price}</p>
+                  <p className="absolute left-30 top-8 font-bold">
+                    ${product.price}
+                  </p>
                 </div>
 
                 <div className="flex text-bg-100">
@@ -99,7 +102,9 @@ useEffect (()=>{
               <div className="flex flex-col pt-[8px] gap-1 relative">
                 <div className="flex justify-between text-[14px] text-tx-400">
                   <p className="line-clamp-1">{product.title}</p>
-                  <p className="absolute left-35 font-bold">${product.price}</p>
+                  <p className="absolute left-30 top-8 font-bold">
+                    ${product.price}
+                  </p>
                 </div>
 
                 <div className="flex text-bg-100">

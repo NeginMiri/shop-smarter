@@ -1,17 +1,26 @@
 @import "tailwindcss";
-@theme{
-    --color-tx-100:#00a63e;
-    --color-tx-200:#314158;
-    --color-tx-300:#1d293d;
-    --color-tx-400:#45556c;
-    --color-bg-100:#00c951;
-    --color-bg-200:#615fff;
-    --color-bg-300:oklch(92.5% .084 155.995);
-    --color-bg-400:#00a63e;
-    --color-bg-500:oklch(87.1% .15 154.449);
-    --color-bg-600:#ffd7a8;
-    --color-bg-700:#bedbff;
-    --color-bg-800:#f9f3f4;
-    --color-bor-100:#d1d5dc;
-
+@theme {
+  --color-tx-100: #00a63e;
+  --color-tx-200: #314158;
+  --color-tx-300: #1d293d;
+  --color-tx-400: #45556c;
+  --color-bg-100: #00c951;
+  --color-bg-200: #615fff;
+  --color-bg-300: oklch(92.5% 0.084 155.995);
+  --color-bg-400: #00a63e;
+  --color-bg-500: oklch(87.1% 0.15 154.449);
+  --color-bg-600: #ffd7a8;
+  --color-bg-700: #bedbff;
+  --color-bg-800: #f9f3f4;
+  --color-bg-900: #05df7210;
+  --color-bg-10: #ff890410;
+  --color-bg-11: #ff8904;
+  --color-bg-12: #a684ff10;
+  --color-bg-13:#a684ff;
+  --color-bg-14:#e2e8f0;
+  --color-bg-15:#f8fafc4d;
+  --color-bor-100: #d1d5dc;
+  --color-bor-200: #05df7230;
+  --color-bor-300: #ff890430;
+  --color-bor-400:#a684ff30;
 }
